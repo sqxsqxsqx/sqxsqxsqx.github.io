@@ -15,11 +15,19 @@
 <meta property="og:site_name" content="咕噜鱼的博客">
 <meta property="og:description" content="第一部分 人工智能初步认知 第一章 人工智能绪论">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://gitee.com/sqx123123/image/raw/main/%E5%9B%BE1.1.png">
+<meta property="og:image" content="https://gitee.com/sqx123123/image/raw/main/%E5%9B%BE1.2.png">
+<meta property="og:image" content="https://gitee.com/sqx123123/image/raw/main/%E5%9B%BE1.3.png">
+<meta property="og:image" content="https://gitee.com/sqx123123/image/raw/main/%E5%9B%BE1.4.png">
+<meta property="og:image" content="https://gitee.com/sqx123123/image/raw/main/%E5%9B%BE1.5.png">
+<meta property="og:image" content="https://gitee.com/sqx123123/image/raw/main/%E5%9B%BE1.6.png">
+<meta property="og:image" content="https://gitee.com/sqx123123/image/raw/main/%E5%9B%BE1.7%20%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%8F%91%E5%B1%95%E6%97%B6%E9%97%B4%E7%BA%BF.png">
 <meta property="article:published_time" content="2022-01-19T03:46:38.335Z">
-<meta property="article:modified_time" content="2022-01-27T07:55:19.750Z">
+<meta property="article:modified_time" content="2022-02-18T09:22:57.595Z">
 <meta property="article:author" content="Sun">
 <meta property="article:tag" content="深度学习">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/sqx123123/image/raw/main/%E5%9B%BE1.1.png">
   
     <link rel="alternative" href="/atom.xml" title="咕噜鱼的博客" type="application/atom+xml">
   
@@ -186,6 +194,53 @@
         <h1 id="第一部分-人工智能初步认知">第一部分 人工智能初步认知</h1>
 <h2 id="第一章-人工智能绪论">第一章 人工智能绪论</h2>
 <span id="more"></span>
+<h3 id="人工智能">人工智能</h3>
+<p>人工智能(Artificial Intelligence，简称AI)<br>
+通用人工智能(Artificial General Intelligence，简称AGI)<br>
+人工智能是让机器获得像人类一样具有思考和推理机制的智能技术<br>
+人工智能的发展主要经历过三个阶段：<br>
+推理期：通过总结、归纳出一些逻辑规则，并将逻辑规则以计算机程序的方式实现，来开发出智能系统。但是这种显式的规则往往过于简单，并且很难表达复杂、抽象的概念和规则。<br>
+通过知识库加推理的方式解决人工智能，通过构建庞大复杂 的专家系统来模拟人类专家的智能水平。 很多复杂、抽象的概念无法用具体的代码实现。比如人类对图片的识别、对语言的理 解过程，根本无法通过既定规则模拟。<br>
+为了解决这类问题，一门通过让机器自动从数据中学习规则的研究学科诞生了，称为机器学习。<br>
+一门通过神经网络来学习复杂、抽象逻辑的方向，称为神经网络。<br>
+2012 年开始，由于效果极为显著，应用深层神经网 络技术在计算机视觉、自然语言处理、机器人等领域取得了重大突破，部分任务上甚至超 越了人类智能水平，开启了以深层神经网络为代表的人工智能的第三次复兴。<br>
+深层神经网络有了一个新名字，叫作深度学习。一般来讲，神经网络和深度学习的本质区别并不大，深度学习特指基于深层神经网络实现的模型或算法。</p>
+<p><img src="https://gitee.com/sqx123123/image/raw/main/%E5%9B%BE1.1.png"></p>
+<h4 id="机器学习">机器学习</h4>
+<p>机器学习可以分为有监督学习(Supervised Learning)、无监督学习(Unsupervised Learning)和强化学习(Reinforcement Learning，简称RL)。</p>
+<p><img src="https://gitee.com/sqx123123/image/raw/main/%E5%9B%BE1.2.png"></p>
+<p><strong>有监督学习</strong>有监督学习的数据集包含了样本𝒙与样本的标签𝒚，算法模型需要学习到 映射关系𝑓𝜃: 𝒙 → 𝒚，其中𝑓𝜃代表模型函数，𝜃为模型的参数。在训练时，通过计算模型的预 测值𝑓𝜃(𝒙)与真实标签𝒚之间的误差来优化网络参数𝜃，使得网络下一次能够预测更精准。<strong>常见的有监督学习有线性回归、逻辑回归、支持向量机、随机森林等</strong>。<br>
+<strong>无监督学习</strong>收集带标签的数据往往代价较为昂贵，对于只有样本𝒙的数据集，算法需要自行发现数据的模态，这种方式叫作无监督学习。无监督学习中有一类算法将自身作为 监督信号，即模型需要学习的映射为𝑓𝜃: 𝒙 → 𝒙，称为<strong>自监督学习(Self-supervised Learning)</strong>。在训练时，通过计算模型的预测值𝑓𝜃(𝒙)与自身𝒙之间的误差来优化网络参数𝜃。 <strong>常见的无监督学习算法有自编码器、生成对抗网络等</strong>。<br>
+<strong>强化学习也称为增强学习</strong>，通过与环境进行交互来学习解决问题的策略的一类算法。 与有监督、无监督学习不同，强化学习问题并没有明确的“正确的”动作监督信号，算法 需要与环境进行<strong>交互</strong>，获取环境反馈的滞后的奖励信号，因此并不能通过计算动作与“正确动作”之间的误差来优化网络。<strong>常见的强化学习算法有DQN，PPO等</strong>。<br>
+#### 神经网络与深度学习 高度并行化的GPU和海量数据让大 规模神经网络的训练成为可能。<br>
+一般将利用<strong>深层神经网络</strong>实现的算法称作<strong>深度学习</strong>，本质上神经网络和深度学习可认为是相同的。<br>
+简单来比较一下深度学习算法与其它算法的特点。基于规则的系统一 般会编写显式的规则逻辑，这些逻辑一般是针对特定的任务设计的，并不适合其他任务。 传统的机器学习算法一般会人为设计具有一定<strong>通用性</strong>的特征检测方法，如 SIFT、HOG特征，这些特征能够适合某一类的任务，具有一定的通用性，但是如何设计特征方法，以及特征方法的优劣性是问题的关键。神经网络的出现，使得人为设计特征这一部分工作可以 通过神经网络让机器自动学习完成，不需要人类干预。但是浅层的神经网络的特征提取能力较为有限，而深层的神经网络擅长提取高层、抽象的特征，因此具有更好的性能表现。</p>
+<p><img src="https://gitee.com/sqx123123/image/raw/main/%E5%9B%BE1.3.png"> ### 神经网络发展简史 2006 年以前，深度学习以神经网络和连接主义名义发展，历经了两次兴盛和两次 寒冬；2006 年，Geoffrey Hinton 首次将深层神经网络命名为深度学习，自此开启了深度学 习的第三次复兴之路。 #### 浅层神经网络 1943 年，心理学家 Warren McCulloch 和逻辑学家Walter Pitts 根据生物神经元(Neuron) 结构，提出了最早的神经元数学模型，称为<strong>MP 神经元模型</strong>。</p>
+<p><img src="https://gitee.com/sqx123123/image/raw/main/%E5%9B%BE1.4.png"></p>
+<p>1958 年，美国心理学家 Frank Rosenblatt 提出了第一个可以自动学习权重的神经元模型，称为<strong>感知机(Perceptron)</strong>。</p>
+<p><img src="https://gitee.com/sqx123123/image/raw/main/%E5%9B%BE1.5.png"></p>
+<p>误差反向传播算法(Back Propagation，简称BP算法)<br>
+循环连接的Hopfield 网络、卷积神经网络、循环神经网络、反 向传播算法等算法模型相继提出。<br>
+&gt;1986 年，David Rumelhart 和Geoffrey Hinton 等人将BP 算法应用 在多层感知机上；1989 年 Yann LeCun 等人将BP 算法应用在手写数字图片识别上，取得 了巨大成功，这套系统成功商用在邮政编码识别、银行支票识别等系统上；1997 年，现在 应用最为广泛的循环神经网络变种之一** LSTM<strong>被 Jürgen Schmidhuber 提出；同年双向循环神经网络也被提出。神经网络的研究随着以</strong>支持向量机(Support Vector Machine，简称 SVM)**为 代表的传统机器学习算法兴起而逐渐进入低谷。支持向量机拥有严格的理论基础，训练需要的样本数量较少，同时也具有良好的泛化能力，相比之下，神经网络理论基础欠缺，可解释性差，很难训练深层网络，性能也相对一般。</p>
+<p><img src="https://gitee.com/sqx123123/image/raw/main/%E5%9B%BE1.6.png"></p>
+<h4 id="深度学习">深度学习</h4>
+<blockquote>
+<p>2006 年，Geoffrey Hinton 等人发现通过逐层预训练的方式可以较好地训练多层神经网 络，并在MNIST手写数字图片数据集上取得了优于 SVM的错误率，开启了第三次人工智能的复兴。在论文中，Geoffrey Hinton 首次提出了Deep Learning 的概念，这也是(深层)神经网络被叫作深度学习的由来。2011 年，Xavier Glorot 提出了<strong>线性整流单元(Rectified Linear Unit，简称ReLU)激活函数</strong>，这是现在使用最为广泛的激活函数之一。2012 年，Alex Krizhevsky 提出了 8 层的深层神经网络<strong>AlexNet</strong>，它采用了ReLU激活函数，并使用 <strong>Dropout 技术来防止过拟合</strong>，同时抛弃了逐层预训练的方式，直接在两块NVIDIA GTX580 GPU上训练网络。AlexNet 在 ILSVRC-2012 图片识别比赛中获得了第一名的成绩，比第二名在 Top-5 错误率上降低了惊人的 10.9%。</p>
+</blockquote>
+<p><img src="https://gitee.com/sqx123123/image/raw/main/%E5%9B%BE1.7%20%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%8F%91%E5%B1%95%E6%97%B6%E9%97%B4%E7%BA%BF.png"></p>
+<h3 id="深度学习的特点">深度学习的特点</h3>
+<p>与传统的机器学习算法、浅层神经网络相比，现代的深度学习算法通常具有如下特点：数据量、计算力、网络规模、通用智能。<br>
+<strong>convolution卷积</strong> ### 深度学习的应用 #### 计算机视觉 <strong>图片识别(Image Classification)</strong> 是常见的分类问题。神经网络的输入为图片数据，输出值为当前样本属于每个类别的概率分布。通常选取概率值最大的类别作为样本的预测类别。图片识别是最早成功应用深度学习的任务之一，经典的网络模型有VGG系列、Inception 系列、ResNet 系列等。<br>
+<strong>目标检测(Object Detection) </strong>是指通过算法自动检测出图片中常见物体的大致位置，通常用边界框(Bounding box)表示，并分类出边界框中物体的类别信息。常见的目标检测算法有RCNN、Fast RCNN、Faster RCNN、Mask RCNN、SSD、YOLO系列等。<br>
+<strong>语义分割(Semantic Segmentation)</strong> 是通过算法自动分割并识别出图片中的内容，可以将语义分割理解为每个像素点的分类问题，分析每个像素点的物体的类别信息，常见的语义分割模型有 FCN、U-net、SegNet、DeepLab 系列等。<br>
+<strong>视频理解(Video Understanding)</strong> 随着深度学习在2D 图片的相关任务上取得较好的效果，具有时间维度信息的 3D视频理解任务受到越来越多的关注。常见的视频理解任务有 视频分类、行为检测、视频主体抽取等。常用的模型有C3D、TSN、DOVF、TS_LSTM等。<br>
+<strong>图片生成(Image Generation)</strong> 通过学习真实图片的分布，并从学习到的分布中采样而获得逼真度较高的生成图片。目前常见的生成模型有VAE系列、GAN系列等。其中GAN系列算法近年来取得了巨大的进展，最新GAN模型产生的图片效果达到了肉眼难辨真伪的程度，如图 1.17 为GAN模型的生成图片。<br>
+除了上述应用，深度学习还在其它方向上取得了不俗的效果，比如艺术风格迁移、超分辨率、图片去燥/去雾、灰度图片着色等一系列非常实用酷炫的任务。 #### 自然语言处理 <strong>机器翻译(Machine Translation)</strong> 过去的机器翻译算法通常是基于统计机器翻译模型，这也是 2016 年前Google 翻译系统采用的技术。2016 年 11 月，Google 基于 Seq2Seq 模型上线了Google 神经机器翻译系统(GNMT)，首次实现了源语言到目标语言的直译技术，在多项任务上获得了 50~90%的效果提升。常用的机器翻译模型有 Seq2Seq、BERT、GPT、 GPT-2 等，其中OpenAI 提出的GPT-2 模型参数量高达 15 亿个，甚至发布之初以技术安全考虑为由拒绝开源GPT-2 模型。<br>
+<strong>聊天机器人(Chatbot)</strong> 聊天机器人也是自然语言处理的一项主流任务，机器自动学习与人类对话，对于人类的简单诉求提供满意的自动回复，提高客户的服务效率和服务质量等。常应用在咨询系统、娱乐系统、智能家居等中。<br>
+#### 强化学习 <strong>虚拟游戏</strong>相对于真实环境，虚拟游戏平台既可以训练、测试强化学习算法，又可以避免无关因素干扰，同时也能将实验代价降到最低。目前常用的虚拟游戏平台有OpenAI Gym、OpenAI Universe、OpenAI Roboschool、DeepMind OpenSpiel、MuJoCo 等，常用的 强化学习算法有DQN、A3C、A2C、PPO 等。在围棋领域，DeepMind AlaphGo 程序已经超越人类围棋专家；在Dota2 和星际争霸游戏上，OpenAI 和DeepMind 开发的智能程序也在限制规则下战胜了职业队伍。<br>
+<strong>机器人(Robotics)</strong> 在真实环境中，机器人的控制也取得了一定的进展。如UC Berkeley实验室在机器人领域的 Imitation Learning、Meta Learning、Few-shot Learning 等方向上取得 了不少进展。美国波士顿动力公司在机器人应用中取得喜人的成就，其制造的机器人在复 杂地形行走、多智能体协作等任务上表现良好。<br>
+<strong>自动驾驶(Autonomous Driving)</strong> 被认为是强化学习短期内能技术落地的一个应用方向，很多公司投入大量资源在自动驾驶上，如百度、Uber、Google 无人车等，其中百度的 无人巴士“阿波龙”已经在北京、雄安、武汉等地展开试运营。</p>
+<h3 id="深度学习的框架">深度学习的框架</h3>
 <h2 id="第二章-回归问题">第二章 回归问题</h2>
 <h2 id="第三章-分类问题">第三章 分类问题</h2>
 <h1 id="第二部分-tensorflow-基础">第二部分 TensorFlow 基础</h1>

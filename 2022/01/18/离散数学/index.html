@@ -8,20 +8,18 @@
   <link rel="dns-prefetch" href="https://sqx123123.gitee.io">
   <title>离散数学 | 咕噜鱼的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一篇 数理逻辑 第一章 命题逻辑">
+  <meta name="description" content="第一篇 数理逻辑 第一章 集合论">
 <meta property="og:type" content="article">
 <meta property="og:title" content="离散数学">
 <meta property="og:url" content="https://sqx123123.gitee.io/2022/01/18/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/index.html">
 <meta property="og:site_name" content="咕噜鱼的博客">
-<meta property="og:description" content="第一篇 数理逻辑 第一章 命题逻辑">
+<meta property="og:description" content="第一篇 数理逻辑 第一章 集合论">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="c:/Users/sunshine/AppData/Roaming/Typora/typora-user-images/1642911649669.png">
 <meta property="article:published_time" content="2022-01-18T06:23:52.313Z">
-<meta property="article:modified_time" content="2022-01-27T08:27:29.195Z">
+<meta property="article:modified_time" content="2022-02-06T08:31:18.073Z">
 <meta property="article:author" content="Sun">
 <meta property="article:tag" content="离散数学">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:/Users/sunshine/AppData/Roaming/Typora/typora-user-images/1642911649669.png">
   
     <link rel="alternative" href="/atom.xml" title="咕噜鱼的博客" type="application/atom+xml">
   
@@ -186,70 +184,124 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="第一篇-数理逻辑">第一篇 数理逻辑</h1>
-<h3 id="第一章-命题逻辑">第一章 命题逻辑</h3>
+<h3 id="第一章-集合论">第一章 集合论</h3>
 <span id="more"></span>
-<h4 id="一-集合论">一、 集合论</h4>
 <ol type="1">
-<li>集合表示方法：枚举法、叙述法、文氏图法<br />
+<li>集合表示方法：枚举法、叙述法、文氏图法<br>
 </li>
-<li>外延性原理：两个集合A和B相等，当且仅当它们的元素完全相同，记为A=B，否则A和B不相等，记为A≠B。<br />
+<li>外延性原理：两个集合A和B相等，当且仅当它们的元素完全相同，记为A=B，否则A和B不相等，记为A≠B。<br>
 </li>
-<li>Theorem：设A，B为任意两个集合，则 A = B <span class="math inline">\(\Leftrightarrow\)</span>A <span class="math inline">\(\subseteq\)</span> B，并且B <span class="math inline">\(\subseteq\)</span> A。<br />
+<li>Theorem：设A，B为任意两个集合，则 A = B <span class="math inline">\(\Leftrightarrow\)</span>A <span class="math inline">\(\subseteq\)</span> B，并且B <span class="math inline">\(\subseteq\)</span> A。<br>
 </li>
-<li>证明两集合相等：证明互为子集（集合间相互包含的关系）。<br />
+<li>证明两集合相等：证明互为子集（集合间相互包含的关系）。<br>
 </li>
-<li>对于任意n元集合A，它的m元（0 <span class="math inline">\(\leqslant\)</span> m <span class="math inline">\(\leqslant\)</span> n）子集个数为 <span class="math inline">\(\mathrm{C}_n^m\)</span> 个，所以不同的子集个数为：<span class="math inline">\(\mathrm{C}_n^0\)</span> + <span class="math inline">\(\mathrm{C}_n^1\)</span> + <span class="math inline">\(\mathrm{C}_n^2\)</span> + <span class="math inline">\(\cdots\)</span> + <span class="math inline">\(\mathrm{C}_n^n\)</span> = <span class="math inline">\((1+1)^n\)</span> = <span class="math inline">\(2^n\)</span> 。<br />
+<li>对于任意n元集合A，它的m元（0 <span class="math inline">\(\leqslant\)</span> m <span class="math inline">\(\leqslant\)</span> n）子集个数为 <span class="math inline">\(\mathrm{C}_n^m\)</span> 个，所以不同的子集个数为：<span class="math inline">\(\mathrm{C}_n^0\)</span> + <span class="math inline">\(\mathrm{C}_n^1\)</span> + <span class="math inline">\(\mathrm{C}_n^2\)</span> + <span class="math inline">\(\cdots\)</span> + <span class="math inline">\(\mathrm{C}_n^n\)</span> = <span class="math inline">\((1+1)^n\)</span> = <span class="math inline">\(2^n\)</span> 。<br>
 </li>
-<li>幂集：设A为任意集合，把A的所有不同子集所构成的集合叫做A的幂集(power set)，记作P(A)。<br />
+<li>幂集：设A为任意集合，把A的所有不同子集所构成的集合叫做A的幂集(power set)，记作P(A)。<br>
 </li>
-<li>集合运算：并、交、补、差、对称差（异或）。<br />
+<li>集合运算：并、交、补、差、对称差（异或）。<br>
 </li>
-<li>阿列夫是集合论的一个特定符号，表示无穷基数的一个希伯来文字母，读为阿列夫(aleph) ，用字母א 表示。<br />
+<li>阿列夫是集合论的一个特定符号，表示无穷基数的一个希伯来文字母，读为阿列夫(aleph) ，用字母א 表示。<br>
 </li>
-<li>无限集合比较大小——等势：两个集合之间一一对应。<br />
+<li>无限集合比较大小——等势：两个集合之间一一对应。<br>
 </li>
-<li>可数集合：凡与自然数集合N等势的集合，称为可数集合(countable set)，该集合的基数记为 <span class="math inline">\(\aleph\)</span> (读作阿列夫零)。<br />
+<li>可数集合：凡与自然数集合N等势的集合，称为可数集合(countable set)，该集合的基数记为 <span class="math inline">\(\aleph\)</span> (读作阿列夫零)。<br>
 </li>
-<li>正奇数、正偶数集合、素数集合、有理数集合等是可数集合。<br />
+<li>正奇数、正偶数集合、素数集合、有理数集合等是可数集合。<br>
 </li>
-<li>一个集合的真子集可以与该集合等势。表面上个数完全不相等的两个集合之间仍可能存在等势关系，如集合与其真子集之间，这体现了有限集合和无限集合的根本差别。<br />
+<li>一个集合的真子集可以与该集合等势。表面上个数完全不相等的两个集合之间仍可能存在等势关系，如集合与其真子集之间，这体现了有限集合和无限集合的根本差别。<br>
 </li>
-<li>从有限到无限，不仅仅是简单数量上的变化(量变)，而引起了本质的改变(质变)。两个无限集合的“大小”已经不能单纯使用集合中元素个数来衡量。<span class="math inline">\(\aleph_0\)</span>表示一切可数集合的基数，是一种抽象的表达。<br />
+<li>从有限到无限，不仅仅是简单数量上的变化(量变)，而引起了本质的改变(质变)。两个无限集合的“大小”已经不能单纯使用集合中元素个数来衡量。<span class="math inline">\(\aleph_0\)</span>表示一切可数集合的基数，是一种抽象的表达。<br>
 </li>
 <li>不可数集合：开区间(0,1)称为不可数集合，凡与开区间集合等势的集合，称为不可数集合，集合的基数记为 <span class="math inline">\(\aleph\)</span> (读作阿列夫)。</li>
 </ol>
 <blockquote>
-<p>皮亚诺公理：基于序数的自然数集。<br />
-- 0是自然数<br />
-- 每个自然数n有一个后继，这个后继也是一个自然数，记为S(n);<br />
-- 两个自然数相等当且仅当它们有相同的后继，即m = n当且仅当S(m)=S(n);<br />
-- 没有任何自然数的后继是0;<br />
+<p>皮亚诺公理：基于序数的自然数集。<br>
+- 0是自然数<br>
+- 每个自然数n有一个后继，这个后继也是一个自然数，记为S(n);<br>
+- 两个自然数相等当且仅当它们有相同的后继，即m = n当且仅当S(m)=S(n);<br>
+- 没有任何自然数的后继是0;<br>
 - 归纳公理：若<span class="math inline">\(\boldsymbol{\varphi}\)</span>是关于一个自然数的预测，如果<span class="math inline">\(\boldsymbol{\varphi}\)</span>(0)为真；当<span class="math inline">\(\boldsymbol{\varphi}\)</span>(n)为真，则有<span class="math inline">\(\boldsymbol{\varphi}\)</span>(S(n))为真，则<span class="math inline">\(\boldsymbol{\varphi}\)</span>(n)对任意自然数n都成立。</p>
 </blockquote>
 <h3 id="第二章-数理逻辑">第二章 数理逻辑</h3>
 <ol type="1">
-<li>命题：能表达判断的陈述句，一个命题具有一个真值，真值只有真、假两种。<br />
+<li>命题：能表达判断的陈述句，一个命题具有一个真值，真值只有真、假两种。<br>
 </li>
-<li>一切没有判断内容的句子，如祈使句、感叹句、疑问句、二义性的陈述句等都不能为命题。<br />
+<li>一切没有判断内容的句子，如祈使句、感叹句、疑问句、二义性的陈述句等都不能为命题。<br>
 </li>
-<li>命题表示：用大写字母A,B,...,P,Q...或用带下标的大写字母A<sub>i</sub>或数字[12]表示。<br />
+<li>命题表示：用大写字母A,B,...,P,Q...或用带下标的大写字母A<sub>i</sub>或数字[12]表示。<br>
 </li>
-<li>原子命题（简单命题）、复合命题。<br />
+<li>原子命题（简单命题）、复合命题。<br>
 </li>
-<li>否定 <span class="math inline">\(\bar{P}\)</span> 。<br />
+<li>否定 <span class="math inline">\(\bar{P}\)</span> 。<br>
 </li>
-<li>合取 P<span class="math inline">\(\land\)</span>Q (P并且Q)，“并且”、“既……又……”、“虽然……但是……”、“不仅……而且……”、“一面……一面……”等。<br />
+<li>合取 P<span class="math inline">\(\land\)</span>Q (P并且Q)，“并且”、“既……又……”、“虽然……但是……”、“不仅……而且……”、“一面……一面……”等。<br>
 </li>
-<li>析取 P<span class="math inline">\(\lor\)</span>Q (P或者Q)，“可兼或、同或”、“不可兼或、异或”。一般为可兼或。<br />
+<li>析取 P<span class="math inline">\(\lor\)</span>Q (P或者Q)，“可兼或、同或”、“不可兼或、异或”。一般为可兼或。<br>
 </li>
-<li>蕴含 <span class="math inline">\({P}\rightarrow{Q}\)</span> (P蕴含Q)，P称为该蕴含式的先件，Q称为该蕴含式的后件，<span class="math inline">\({P}\rightarrow{Q}\)</span> 当且仅当P为真且Q为假。当前件为件为假时，后件总为真（善意推定）。<br />
+<li>蕴含 <span class="math inline">\({P}\rightarrow{Q}\)</span> (P蕴含Q)，P称为该蕴含式的先件，Q称为该蕴含式的后件，<span class="math inline">\({P}\rightarrow{Q}\)</span> 当且仅当P为真且Q为假。当前件为件为假时，后件总为真（善意推定）。<br>
 </li>
 <li>等价 <span class="math inline">\({P}\leftrightarrow{Q}\)</span> (双条件联结词)，“P当且仅当Q”，<span class="math inline">\({P}\leftrightarrow{Q}\)</span> 为真，当且仅当P、Q相同真假。</li>
 </ol>
-<h3 id="第二章-命题逻辑">第二章 命题逻辑</h3>
-<figure>
-<img src="C:\Users\sunshine\AppData\Roaming\Typora\typora-user-images\1642911649669.png" alt="1642911649669" /><figcaption aria-hidden="true">1642911649669</figcaption>
-</figure>
+<h3 id="第三章-命题逻辑">第三章 命题逻辑</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">P</th>
+<th style="text-align: center;">Q</th>
+<th style="text-align: center;"><span class="math inline">\(\bar{P}\)</span></th>
+<th style="text-align: center;">P<span class="math inline">\(\land\)</span>Q</th>
+<th style="text-align: center;">P<span class="math inline">\(\lor\)</span>Q</th>
+<th style="text-align: center;"><span class="math inline">\({P}\rightarrow{Q}\)</span></th>
+<th style="text-align: center;"><span class="math inline">\({P}\leftrightarrow{Q}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+<p>所有五个联结词的优先顺序为：否定，合取，析取，蕴含，等价。<br>
+命题联结词的应用：网页检索（布尔检索）、计算机位运算（获取IP报头中版本号）。<br>
+命题变元：一个任意没有赋予具体内容的原子命题是一个变量命题，常称为命题变量或命题变元，该命题变量无具体真值，它的变域是集合{T,F}或{0,1}。<br>
+命题公式：命题演算的合式公式。原子命题变元是最简单的合式公式，称为原子公式。<br>
+命题公式没有真值，只有对其命题变元进行真值指派后，方可确定命题公式的真值。<br>
+在实际应用中，为方便存储和运算，命题公式常用二元树的方式来表示。<br>
+指派一组真值，称为公式的一种解释。n 个命题变元，有 <span class="math inline">\(2^n\)</span> 个命题解释。</p>
 
       
 
