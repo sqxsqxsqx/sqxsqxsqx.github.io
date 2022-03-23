@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://sqx123123.gitee.io">
-  <title>Tag: 深度学习 | 咕噜鱼的博客</title>
+  <title>咕噜鱼的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="sunshine">
-<meta property="og:type" content="website">
+  <meta name="description" content="Transformers是TensorFlow 2.0和PyTorch的最新自然语言处理库。Transformers(以前称为pytorch-transformers和pytorch-pretrained-bert)提供用于自然语言理解(NLU)和自然语言生成(NLG)的最先进的模型(BERT，GPT-2，RoBERTa，XLM，DistilBert，XLNet，CTRL ...) ，拥有超过32">
+<meta property="og:type" content="article">
 <meta property="og:title" content="咕噜鱼的博客">
-<meta property="og:url" content="https://sqx123123.gitee.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:url" content="https://sqx123123.gitee.io/2022/03/01/%E8%84%91%E8%82%BF%E7%98%A4/index.html">
 <meta property="og:site_name" content="咕噜鱼的博客">
-<meta property="og:description" content="sunshine">
+<meta property="og:description" content="Transformers是TensorFlow 2.0和PyTorch的最新自然语言处理库。Transformers(以前称为pytorch-transformers和pytorch-pretrained-bert)提供用于自然语言理解(NLU)和自然语言生成(NLG)的最先进的模型(BERT，GPT-2，RoBERTa，XLM，DistilBert，XLNet，CTRL ...) ，拥有超过32">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-03-01T08:10:24.783Z">
+<meta property="article:modified_time" content="2022-03-01T08:10:25.193Z">
 <meta property="article:author" content="Sun">
 <meta property="article:tag" content="sun,SQX,sqx,程序员,程序猿,极客,考研,编程,IT,">
 <meta name="twitter:card" content="summary">
@@ -161,71 +163,157 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-脑肿瘤" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Transformers是TensorFlow 2.0和PyTorch的最新自然语言处理库。Transformers(以前称为pytorch-transformers和pytorch-pretrained-bert)提供用于自然语言理解(NLU)和自然语言生成(NLG)的最先进的模型(BERT，GPT-2，RoBERTa，XLM，DistilBert，XLNet，CTRL ...) ，拥有超过32种预训练模型，支持100多种语言，并且在TensorFlow 2.0和PyTorch之间具有深厚的互操作性。</p>
+<p>摘要在自然语言任务上取得了前所未有的成功之后，Transformers已经成功地应用于多个领域 计算机视觉问题，取得最先进的成果，并促使研究人员重新考虑卷积的优越性 神经网络（CNN）作为事实上的算子。利用计算机视觉的这些进步，医学成像领域也取得了进展 与具有局部感受野的CNN相比，人们对能够捕捉全球环境的变压器越来越感兴趣。灵感来自 在这次调查中，我们试图全面回顾变压器在医学成像中的应用 涵盖各个方面，从最近提出的建筑设计到尚未解决的问题。具体来说，我们调查了 医学图像分割、检测、分类、重建、合成、配准、临床报告生成、， 以及其他任务。特别是，对于这些应用程序中的每一个，我们都开发了分类法，确定了特定于应用程序的挑战，以及 提供解决问题的见解，并强调最近的趋势。此外，我们对该领域的整体现状进行了批判性讨论， 包括确定关键挑战、公开问题，以及勾勒出有希望的未来方向。我们希望这项调查能引起关注 进一步提高社区的兴趣，并为研究人员提供有关变压器模型应用的最新参考 医学成像。最后，为了应对这一领域的快速发展，我们打算定期更新相关的最新论文及其成果 在https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging.</p>
+<p>本文采用标记控制分水岭优化的C-V模型对脑肿瘤图像进行分割，然后通过面绘制中的移动立方体(Marching Cubes，MC)算法对分割后的肿瘤序列图像进行三维重建。论文的主要工作有以下几点:(1)为减少脑肿瘤CT/MRI图像边缘模糊对分割造成的不良影响，本文采用数学形态学方法对脑肿瘤CT/MRI图像进行预处理，通过开闭运算结合的非线性形态学组合滤波达到滤除噪声同时尽可能保持肿瘤的边缘特征的效果，加快分割速度，减少分割误差。(2)当脑肿瘤与周围组织粘连难以分清时，单独使用常用的分割方法分割出粘连部分较为困难，本文采用标记控制分水岭优化的C-V模型进行分割，将标记控制分水岭的分割结果作为改进的C-V模型的初始轮廓进行曲线演化，分割出肿瘤与组织粘连的部分，该方法不仅解决了C-V模型对初始轮廓敏感的问题，同时在C-V模型的能量函数中加入惩罚项，避免了不断重新初始化造成的耗时、计算量大等缺陷。(3)为了显示更详细的肿瘤信息，本文将分割出的序列肿瘤图像进行面绘制，采用移动立方体算法实现三维重建，显示出肿瘤的三维特征，为临床诊断提供更多依据。本文MATLAB2014a平台上对临床脑肿瘤图像进行仿真实验，结果表明，本文方法对于常见脑肿瘤CT/MRI图像均有良好的分割效果，尤其对于与组织粘连的肿瘤有较好的分割效果，同时实现了对脑肿瘤的三维重建。其状况医疗图像处理是现代医学的重要手段之一，项目尝试采用深度学习框架初步判断，医学图像分割就是一个根据区域间的相似或不同把图像分割成若干区域的过程。目前，主要以各种细胞、组织与器官的图像作为处理的对象。传统的图像分割技术有基于区域的分割方法和基于边界的分割方法，前者依赖于图像的空间局部特征，如灰度、纹理及其它象素统计特性的均匀性等，后者主要是利用梯度信息确定目标的边界。最终实现基于自动编码器能快速、准确的分割结果，并在前端展示。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/wechat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/01/19/TensorFlow/" class="archive-article-date">
-  	<time datetime="2022-01-19T03:46:38.335Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/01/19/TensorFlow/">深度学习</a>
-    </h1>
-  
+      </div>
+    </span>
+  </div>
+</div>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">深度学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://sqx123123.gitee.io/2022/03/01/%E8%84%91%E8%82%BF%E7%98%A4/" alt="微信分享二维码">
+    </div>
+</div>
 
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/人工智能//" class="article-tag-list-link color5">人工智能</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2022/03/14/C/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2022/02/28/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -250,9 +338,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,

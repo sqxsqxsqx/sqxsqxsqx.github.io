@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sqx123123.gitee.io/2022/03/14/C/</loc>
+    
+    <lastmod>2022-03-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sqx123123.gitee.io/2022/03/01/%E8%84%91%E8%82%BF%E7%98%A4/</loc>
+    
+    <lastmod>2022-03-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sqx123123.gitee.io/2022/02/28/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    
+    <lastmod>2022-02-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sqx123123.gitee.io/2022/02/28/PyTorch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    
+    <lastmod>2022-02-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://sqx123123.gitee.io/2022/01/19/TensorFlow/</loc>
     
     <lastmod>2022-02-18</lastmod>
@@ -31,7 +67,7 @@
 
   <url>
     <loc>https://sqx123123.gitee.io/</loc>
-    <lastmod>2022-02-27</lastmod>
+    <lastmod>2022-03-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -39,14 +75,21 @@
   
   <url>
     <loc>https://sqx123123.gitee.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2022-02-27</lastmod>
+    <lastmod>2022-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sqx123123.gitee.io/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</loc>
-    <lastmod>2022-02-27</lastmod>
+    <lastmod>2022-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sqx123123.gitee.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%8C-%E6%A1%86%E6%9E%B6/</loc>
+    <lastmod>2022-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -55,14 +98,14 @@
   
   <url>
     <loc>https://sqx123123.gitee.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
-    <lastmod>2022-02-27</lastmod>
+    <lastmod>2022-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sqx123123.gitee.io/categories/%E6%95%B0%E5%AD%A6/</loc>
-    <lastmod>2022-02-27</lastmod>
+    <lastmod>2022-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

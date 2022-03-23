@@ -163,6 +163,255 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-C" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>C可用gcc hello.c -o hello</p>
+<p>若工程中有多个文件，可用makefile文件执行；</p>
+<p>出现在scanf里的内容，是要输入的。</p>
+<p>浮点数输入用%lf，输出用%f</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/03/14/C/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-脑肿瘤" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Transformers是TensorFlow 2.0和PyTorch的最新自然语言处理库。Transformers(以前称为pytorch-transformers和pytorch-pretrained-bert)提供用于自然语言理解(NLU)和自然语言生成(NLG)的最先进的模型(BERT，GPT-2，RoBERTa，XLM，DistilBert，XLNet，CTRL ...) ，拥有超过32种预训练模型，支持100多种语言，并且在TensorFlow 2.0和PyTorch之间具有深厚的互操作性。</p>
+<p>摘要在自然语言任务上取得了前所未有的成功之后，Transformers已经成功地应用于多个领域 计算机视觉问题，取得最先进的成果，并促使研究人员重新考虑卷积的优越性 神经网络（CNN）作为事实上的算子。利用计算机视觉的这些进步，医学成像领域也取得了进展 与具有局部感受野的CNN相比，人们对能够捕捉全球环境的变压器越来越感兴趣。灵感来自 在这次调查中，我们试图全面回顾变压器在医学成像中的应用 涵盖各个方面，从最近提出的建筑设计到尚未解决的问题。具体来说，我们调查了 医学图像分割、检测、分类、重建、合成、配准、临床报告生成、， 以及其他任务。特别是，对于这些应用程序中的每一个，我们都开发了分类法，确定了特定于应用程序的挑战，以及 提供解决问题的见解，并强调最近的趋势。此外，我们对该领域的整体现状进行了批判性讨论， 包括确定关键挑战、公开问题，以及勾勒出有希望的未来方向。我们希望这项调查能引起关注 进一步提高社区的兴趣，并为研究人员提供有关变压器模型应用的最新参考 医学成像。最后，为了应对这一领域的快速发展，我们打算定期更新相关的最新论文及其成果 在https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging.</p>
+<p>本文采用标记控制分水岭优化的C-V模型对脑肿瘤图像进行分割，然后通过面绘制中的移动立方体(Marching Cubes，MC)算法对分割后的肿瘤序列图像进行三维重建。论文的主要工作有以下几点:(1)为减少脑肿瘤CT/MRI图像边缘模糊对分割造成的不良影响，本文采用数学形态学方法对脑肿瘤CT/MRI图像进行预处理，通过开闭运算结合的非线性形态学组合滤波达到滤除噪声同时尽可能保持肿瘤的边缘特征的效果，加快分割速度，减少分割误差。(2)当脑肿瘤与周围组织粘连难以分清时，单独使用常用的分割方法分割出粘连部分较为困难，本文采用标记控制分水岭优化的C-V模型进行分割，将标记控制分水岭的分割结果作为改进的C-V模型的初始轮廓进行曲线演化，分割出肿瘤与组织粘连的部分，该方法不仅解决了C-V模型对初始轮廓敏感的问题，同时在C-V模型的能量函数中加入惩罚项，避免了不断重新初始化造成的耗时、计算量大等缺陷。(3)为了显示更详细的肿瘤信息，本文将分割出的序列肿瘤图像进行面绘制，采用移动立方体算法实现三维重建，显示出肿瘤的三维特征，为临床诊断提供更多依据。本文MATLAB2014a平台上对临床脑肿瘤图像进行仿真实验，结果表明，本文方法对于常见脑肿瘤CT/MRI图像均有良好的分割效果，尤其对于与组织粘连的肿瘤有较好的分割效果，同时实现了对脑肿瘤的三维重建。其状况医疗图像处理是现代医学的重要手段之一，项目尝试采用深度学习框架初步判断，医学图像分割就是一个根据区域间的相似或不同把图像分割成若干区域的过程。目前，主要以各种细胞、组织与器官的图像作为处理的对象。传统的图像分割技术有基于区域的分割方法和基于边界的分割方法，前者依赖于图像的空间局部特征，如灰度、纹理及其它象素统计特性的均匀性等，后者主要是利用梯度信息确定目标的边界。最终实现基于自动编码器能快速、准确的分割结果，并在前端展示。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/03/01/%E8%84%91%E8%82%BF%E7%98%A4/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-python学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="python切片">python切片</h1>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">demo = <span class="string">&#x27;Python&#x27;</span></span><br><span class="line"><span class="comment">#a[start:end]</span></span><br><span class="line"><span class="built_in">print</span>(demo[<span class="number">0</span>:<span class="number">2</span>])</span><br><span class="line"><span class="comment">#Py</span></span><br><span class="line"><span class="comment">#取end之前的</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(demo[-<span class="number">5</span>:])</span><br><span class="line"><span class="comment">#ython</span></span><br><span class="line"><span class="comment">#取最后,不写名end</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(demo[:<span class="number">2</span>])</span><br><span class="line"><span class="comment">#Py</span></span><br><span class="line"><span class="comment">#从头开始取</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(demo[:])</span><br><span class="line"><span class="comment">#从头取到尾</span></span><br><span class="line"><span class="built_in">print</span>(demo[::<span class="number">2</span>])</span><br><span class="line"><span class="comment">#从开头取到结尾，间隔2</span></span><br><span class="line"><span class="comment">#Pto</span></span><br></pre></td></tr></table></figure>
+<h1 id="字符串拼接">字符串拼接 +</h1>
+<h1 id="输出">%输出</h1>
+<p>多参数</p>
+<h1 id="注释">注释</h1>
+<ol type="1">
+<li><p>````python <figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">   ````</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>. ```python</span><br><span class="line">   文档字符串</span><br><span class="line">   print(f.__doc__)</span><br></pre></td></tr></table></figure></p></li>
+<li></li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/02/28/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-PyTorch学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/02/28/PyTorch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">PyTorch学习</a>
+    </h1>
+  
+
+        
+        <a href="/2022/02/28/PyTorch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2022-02-28T06:31:36.380Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="pytorch">PyTorch</h1>
+<p>深度学习库能做什么？<br>
+1. GPU加速<br>
+2. 自动求导<br>
+3. 常用网络层API<br>
+<img src="https://gitee.com/sqx123123/image/raw/main/常用API.png"></p>
+<p>环境</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">深度学习， 框架</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/人工智能//" class="article-tag-list-link color5">人工智能</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/02/28/PyTorch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-TensorFlow" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -520,6 +769,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">离散数学</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">深度学习， 框架</a>
               </li>
             
             <div class="clearfix"></div>
